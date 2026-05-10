@@ -1,10 +1,10 @@
 import { useState } from "react";
-import "../styles/auth.css";
 import { loginUser } from "../services/authService";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import { Eye, EyeOff } from "lucide-react";
 import PasswordInput from "../components/PasswordInput";
+import "../styles/auth.css";
 
 export default function Login() {
   const [formData, setFormData] = useState({
