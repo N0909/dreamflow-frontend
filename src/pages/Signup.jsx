@@ -1,9 +1,9 @@
 import { useState } from "react";
-import "../styles/auth.css";
 import { signupUser } from "../services/authService";
 import { useNavigate } from "react-router-dom";
 import { toast } from 'react-toastify';
 import PasswordInput  from '../components/PasswordInput.jsx';
+import "../styles/auth.css";
 
 function Signup() {
     

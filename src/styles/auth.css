@@ -46,7 +46,7 @@ body {
 }
 
 .password-container input{
-    /* width: 100%; */
+    width: 100%;
     padding-right: 45px;
 }
 
