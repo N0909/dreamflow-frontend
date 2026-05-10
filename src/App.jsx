@@ -1,23 +1,28 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import HomePage from './pages/Home.jsx';
+import Home from "./pages/Home";
 
-function Home() {
-  return <HomePage />;
-}
-
-function Login() {
-  return <h1>Login Page</h1>;
-}
+import MainLayout from "./layouts/MainLayout.jsx";
 
 function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-      </Routes>
-    </BrowserRouter>
-  );
+
+    return (
+
+        <BrowserRouter>
+
+            <Routes>
+
+                {/* Routes With Navbar */}
+
+                <Route element={<MainLayout />}>
+
+                    <Route path="/" element={<Home />} />
+
+                </Route>
+
+            </Routes>
+
+        </BrowserRouter>
+    );
 }
 
 export default App;
